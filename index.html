@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png" />
+    <title>Frontend Mentor | Fylo data storage component</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/1.4.6/tailwind.min.css" />
+  </head>
+  <body class="flex justify-center items-center h-screen bg-vdb">
+    <div class="z-50 flex md:items-end md:flex-row flex-col justify-center">
+      <div class="bg-db p-10 pr-32 rounded-lg dash mr-8 shd">
+        <img src="images/logo.svg" alt="" />
+        <div class="buttons flex mt-5">
+          <button class="bg-vdb p-3 mr-3 rounded-lg">
+            <img src="images/icon-document.svg" alt="" />
+          </button>
+          <button class="bg-vdb p-3 mr-3 rounded-lg"><img src="images/icon-folder.svg" alt="" /></button>
+          <button class="bg-vdb p-3 mr-3 rounded-lg"><img src="images/icon-upload.svg" alt="" /></button>
+        </div>
+      </div>
+      <div class="bg-db rounded-lg storage px-10 py-6 text-white shd relative mt-8 md:mt-0 md:pb-6 pb-12">
+        <div class="text-sm" style="color: hsl(243, 100%, 93%);">
+          You've used <span class="font-bold">815 GB</span> of your storage
+        </div>
+
+        <div class="progress rounded-full w-full h-4 mt-3">
+          <div class="bar relative rounded-full h-full"></div>
+        </div>
+
+        <div class="flex justify-between w-full text-xs font-bold mt-3">
+          <div>0 GB</div>
+          <div>1000 GB</div>
+        </div>
+
+        <div class="box absolute bg-white text-black tri-right px-5 py-2 rounded-lg flex items-center">
+          <div class="text-3xl font-bold" style="color: hsl(229, 57%, 11%);">185</div>
+          <div class="gbleft text-gray-800 ml-3 font-bold" style="color: hsl(229, 7%, 55%);">GB LEFT</div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

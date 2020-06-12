@@ -1,0 +1,105 @@
+@import url(https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap);
+
+.bg-vdb {
+  background-color: hsl(229, 57%, 11%);
+}
+
+*,
+*::after,
+*::before {
+  font-family: Raleway, sans-serif;
+  box-sizing: border-box;
+}
+
+body::after {
+  content: '';
+  background: url(images/bg-desktop.svg) no-repeat center center/cover;
+  width: 100%;
+  height: 48%;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  border-top-left-radius: 18rem;
+}
+
+.bg-db {
+  background-color: hsl(228, 56%, 26%);
+}
+
+.dash {
+  border-top-right-radius: 70px !important;
+}
+
+.shd {
+  box-shadow: 0 5px 30px 20px rgba(0, 0, 0, 0.3);
+}
+
+.box {
+  top: -55px;
+  right: 40px;
+}
+
+@media (max-width: 767px) {
+  .box {
+    top: unset;
+    bottom: -30px;
+    right: 25%;
+  }
+}
+
+.gbleft {
+  font-size: 0.65rem;
+}
+
+@media (min-width: 768px) {
+  .tri-right:after {
+    content: ' ';
+    position: absolute;
+    width: 0;
+    height: 0;
+    left: auto;
+    right: 0px;
+    bottom: -20px;
+    border: 12px solid;
+    border-color: lightyellow lightyellow transparent transparent;
+  }
+}
+
+.progress {
+  background-color: #151e48;
+}
+
+.bar {
+  width: 81.5%;
+  background: linear-gradient(to right, #ffa399, #ff4d97);
+  border: 2px solid hsl(229, 57%, 11%);
+}
+
+.bar::after {
+  content: ' ';
+  background: white;
+  width: 8px;
+  height: 8px;
+  margin-top: 2px;
+  margin-right: 2px;
+  border-radius: 50%;
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+.storage {
+  width: 30rem;
+}
+
+@media (max-width: 1030px) {
+  .storage {
+    width: 24rem;
+  }
+}
+
+@media (max-width: 870px) {
+  .storage {
+    width: 20rem;
+  }
+}
