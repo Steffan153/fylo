@@ -61,7 +61,7 @@ body::after {
     right: 0px;
     bottom: -20px;
     border: 12px solid;
-    border-color: lightyellow lightyellow transparent transparent;
+    border-color: white white transparent transparent;
   }
 }
 
@@ -72,7 +72,7 @@ body::after {
 .bar {
   width: 81.5%;
   background: linear-gradient(to right, #ffa399, #ff4d97);
-  border: 2px solid hsl(229, 57%, 11%);
+  border: 2px solid #191d49;
 }
 
 .bar::after {
